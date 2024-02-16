@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #b8c6db, #f5f7f7 100%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.time-quiz{
+    position: absolute;
+    left: 50px;
+}
+.time-quiz span{
+    color: red;
+    font-size: 3rem;
+}
+
+.container{
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+form,
+.roule-content{
+    position: relative;
+    width: 400px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(100, 100, 100, .1);
+}
+
+.title-question{
+    margin-bottom: 40px;
+}
+
+.title-question h2,
+.roule-header{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.options,
+.roule-body{
+    margin-bottom: 70px;
+}
+
+.options .option-line{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.submit{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+.submit button{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: #03cae4;
+    border: none;
+    border-radius: 0 0 10px 10px;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 900;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.submit button:focus{
+    background-color: teal;
+}
+
+.submit button::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: blue;
+    border-radius: 0 0 10px 10px;
+    z-index: -1;
+    transition: .5s;
+}
+.submit button:hover::before{
+    width: 100%;
+}
+
+.roule-content{
+    width: 700px;
+}
+.roule-body ul li{
+    list-style: decimal;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+

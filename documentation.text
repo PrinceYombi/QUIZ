@@ -1,0 +1,27 @@
+- LISTE DES QUESTIONS
+
+    q1 : Quel langage tourne avec le navigateur ?
+    options : a : "Java", b : "C", c : "Python", d : "Javascript",
+    reponse : d
+
+     q2 : Que signifie CSS ?
+    options : a : "Central Style Sheets", b : "Cascading Style sheets", c : "Cascading Simple Sheets", d : "Cars SUVs Sailboats",
+    reponse : b
+
+     q3 : Que signifie HTML ?
+    options : a : "HyperText Markup Language", b : "HyperText Markdown Language", c : "Hyperloop Machine Language", d : "HyperLink Markup Language",
+    reponse : a
+
+     q4 : En quelle année Javascript a été créé ?
+    options : a : "1996", b : "1995", c : "1994", d : "Aucune de ces années",
+    reponse : b
+
+- FONCTIONNEMENT DU QUIZ
+
+    Vous aurez seulement 15s pour répondre à chaque question
+    Une fois que vous valider votre réponse, vous ne pouriez plus révenir en arrière
+    Vous ne pouvez pas selectionner deux options au même moment
+    Vous ne pouvez pas quitter le Quiz une fois lancé
+    Vous aurez vos points à la fin des questions
+
+    
