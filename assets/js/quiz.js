@@ -84,6 +84,7 @@ function getSelected(){
  */
 function questionsAndReloadQuiz(){
 
+    const answerSelected = getSelected()
     currentQuiz ++
 
     if (currentQuiz < quizData.length) {
@@ -92,10 +93,18 @@ function questionsAndReloadQuiz(){
         reloadTime()
     }else{
         timeQuiz.innerHTML = ''
-        
         form.innerHTML = `
             <div class="title-question">
             <h2>Vous avez repondu ${score}/${quizData.length} questions correctement</h2>
+            <div class="correction">
+                <h4>Question : ${quizData[0].question}</h4>
+                <p style="color:red;">Correction : ${quizData[0].d}</p>
+                <h4>Question : ${quizData[1].question}</h4>
+                <p style="color:red;">Correction : ${quizData[1].b}</p>
+                <h4>Question : ${quizData[2].question}</h4>
+                <p style="color:red;">Correction : ${quizData[2].a}</p>
+                <h4>Question : ${quizData[3].question}</h4>
+                <p style="color:red;">Correction : ${quizData[3].b}</p>
             <div class="submit">
             <button type="button" onclick="location.reload()">Récommencer le quiz</button>
             </div>
@@ -120,12 +129,6 @@ submitButton.addEventListener('click', ()=>{
     }
 
 })
-
-
-
-
-
-
 
 
 
